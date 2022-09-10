@@ -27,6 +27,12 @@ p {
     margin: 0;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 .container {
     max-width: 1230px;
     padding: 0 15px;
@@ -131,40 +137,38 @@ header::after {
 
 .header__text {
     font-size: 24px;
-    line-height: 27ppx;
-    margin-bottom: 20px;
+    line-height: 27px;
+    margin-bottom: 25px;
 }
 
 
 .header__decor-text {
     position: absolute;
-    bottom: 25px;
+    bottom: 15px;
     color: #0093A1;
 }
 
 .header__decor-text--one {
     z-index: 1;
-    right: 107px;
-    bottom: 100px;
-    
-   
+    right: 180px;
+    bottom: 85px;
 }
 
 .header__decor-text--one,
 .header__decor-text--two {
-    font-family: 'Comfortaa' cursive;
+    font-family: 'Comfortaa', cursive;
     font-style: normal;
     font-size: 130px;
     line-height: 145px;
     opacity: 0.3;
-    
+
 }
 
-    .header__decor-text--two{
-        z-index: 4;
-        left: 320px;
-        bottom: 0;
-    
+.header__decor-text--two {
+    z-index: 4;
+    left: 255px;
+    bottom: 0;
+
 
 }
 
@@ -179,3 +183,176 @@ header::after {
     line-height: 39px;
     text-align: center;
 }
+
+.info {
+    background-image: url(../images/info-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 120px;
+}
+
+.info::before {
+    content: "";
+    position: absolute;
+    height: 130px;
+    background-color: #262C27;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(-120px);
+    z-index: 1;
+}
+
+.info__top {
+    display: flex;
+    gap: 80px;
+    padding-top: 140px;
+    margin-bottom: 80vh;
+}
+
+.info__top-text {
+    padding-top: 260px;
+    width: 290px;
+    color: white;
+    position: relative;
+}
+.info__top-text--one {
+    padding-bottom: 125px;
+}
+
+.info__top-text--two {
+    border-bottom: 1px solid #fff;
+}
+
+.info__top-img {
+    position: relative;
+    z-index: 6;
+}
+
+.popup-btn {
+    text-align: center ;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.popup-btn span {
+    padding-top: 12px;
+    display: block;
+    color: white;
+}
+.info__btn {
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+}
+
+.info__specs {
+    display: flex;
+    align-items: center;
+    gap: 125px;
+    padding-top: 50px;
+    color: white;
+}
+
+.info__specs-title {
+    text-transform: uppercase;
+    font-family: 'Comfortaa', cursive ;
+    font-size: 60px;
+    line-height: 67px;
+    width: 215px;
+}
+
+.info__specs-list {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 30px 0;
+    width: 565px;
+    font-weight: 700;
+}
+
+.info__specs-item {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 25px;
+}
+.info__specs-caption {
+    width: 190px;
+}
+.buy {
+    padding: 150px 0;
+}
+
+.buy__inner {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+.buy__content {
+    width: 510px;
+}
+
+.buy__title {
+    font-family: 'Comfortaa', cursive;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    font-size: 60px;
+    line-height: 67px;
+    color: #0093A1;
+}
+
+.buy__list {
+    margin-bottom: 25px;
+}
+.buy__item {
+    margin-bottom: 25px;
+    width: 285px;
+}
+
+.buy__item:hover .buy__item-title{
+    color: #0093A1;
+}
+.buy__item-title {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    transition: color .3s;
+}
+
+.buy__price {
+    /*position: absolute;*/
+    right:0;
+    bottom: 130px;
+    width: 201px;
+    height: 199px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/Star.svg) ;
+}
+.buy__btn {
+    font-family: 'Comfortaa', cursive ;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+    background-color: transparent;
+    border: 2px solid #0093A1;
+    color: #0093A1;
+    cursor: pointer;
+    padding: 18px;
+    text-align: center;
+    max-width: 484px;
+    width: 100%;
+    transition: all .3s;
+
+
+}
+
+
+

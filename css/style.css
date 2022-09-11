@@ -287,11 +287,14 @@ header::after {
 
 .buy__inner {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 90px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .buy__content {
-    width: 510px;
+    max-width: 510px;
+    width: 100%;
 }
 
 .buy__title {
@@ -305,6 +308,7 @@ header::after {
 
 .buy__list {
     margin-bottom: 25px;
+    position: relative;
 }
 .buy__item {
     margin-bottom: 25px;
@@ -322,9 +326,9 @@ header::after {
 }
 
 .buy__price {
-    /*position: absolute;*/
+    position: absolute;
     right:0;
-    bottom: 130px;
+    bottom: 0px;
     width: 201px;
     height: 199px;
     font-weight: 700;
